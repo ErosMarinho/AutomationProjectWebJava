@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		glue = "br.com.project.awj.execute",
 
 		tags = { 
-					"@TESTE"
+					""
 				},
 		
 		plugin = { "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",

@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-07-06T02:46:14.006Z",
+        "start_timestamp": "2024-07-12T03:11:21.944Z",
         "before": [
           {
             "result": {
-              "duration": 2869709000,
+              "duration": 2667094300,
               "status": "passed"
             },
             "match": {
@@ -16,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 12020600,
+              "duration": 15547100,
               "status": "passed"
             },
             "match": {
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 297400,
+              "duration": 488600,
               "status": "passed"
             },
             "match": {
@@ -33,16 +33,15 @@
             }
           }
         ],
-        "line": 13,
-        "name": "Testar funcionalidade dos componentes na tela",
+        "line": 18,
+        "name": "Testar a tela Automobile Insurance",
         "description": "",
-        "id": "tela-do-site-tricentis;testar-funcionalidade-dos-componentes-na-tela;;2",
+        "id": "realizar-testes-de-cadastro-dos-menus-automobile--truck--motorcycle-e-camper-do-site-tricentis;testar-a-tela-automobile-insurance;;2",
         "after": [
           {
             "result": {
-              "error_message": "java.lang.RuntimeException: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading \u0027scrollHeight\u0027)\n  (Session info: chrome\u003d126.0.6478.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027EROS-WIND11\u0027, ip: \u0027192.168.1.23\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_412-412\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\\Users\\Eros\\AppData\\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: ae9a864524ba0d93d159dfc36d5fea7d\r\n\tat ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:32)\r\n\tat ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getFullHeight(ViewportPastingDecorator.java:67)\r\n\tat ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:41)\r\n\tat ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:35)\r\n\tat ru.yandex.qatools.ashot.AShot.takeScreenshot(AShot.java:145)\r\n\tat br.com.project.awj.core.interacao.Interactions.screenshotEvidence(Interactions.java:980)\r\n\tat br.com.project.awj.execute.hooks.HookAfter.screenshot(HookAfter.java:30)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\nCaused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading \u0027scrollHeight\u0027)\n  (Session info: chrome\u003d126.0.6478.127)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027EROS-WIND11\u0027, ip: \u0027192.168.1.23\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_412-412\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\\Users\\Eros\\AppData\\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: ae9a864524ba0d93d159dfc36d5fea7d\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)\r\n\tat ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:30)\r\n\t... 43 more\r\n",
-              "duration": 1240628800,
-              "status": "failed"
+              "duration": 4044673500,
+              "status": "passed"
             },
             "match": {
               "location": "HookAfter.screenshot(Scenario)"
@@ -50,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 310000,
+              "duration": 187200,
               "status": "passed"
             },
             "match": {
@@ -63,15 +62,183 @@
         "steps": [
           {
             "result": {
-              "duration": 210776000,
+              "duration": 3207370699,
               "status": "passed"
             },
             "line": 7,
             "name": "Acessa o site do Tricentis",
             "match": {
-              "location": "HomeBackofficeSteps.acessasite()"
+              "location": "AutomobileInsuranceSteps.acessasite()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3229648600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Clica no menu Automobile",
+            "match": {
+              "location": "AutomobileInsuranceSteps.clicaMenuAutomobile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1409981500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Preenche formulário da Aba \u0027Enter Vehicle Data\u0027 de Automobile Insurance \"2000\",\"10/10/1983\",\"100000\",\"ABC1EF2\",\"100000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2000\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"10/10/1983\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"100000\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"ABC1EF2\"",
+                  "offset": 101
+                },
+                {
+                  "val": "\"100000\"",
+                  "offset": 111
+                }
+              ],
+              "location": "AutomobileInsuranceSteps.preencheFormularioAbaVehicleData(String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1999940600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Preenche formulário da Aba \u0027Enter Insurant Data\u0027 de Automobile Insurance \"Francisco\",\"Lacerda\",\"10/18/1983\",\"Rua Mario Gomes\",\"53654875\",\"São Paulo\",\"www.google.com.br\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Francisco\"",
+                  "offset": 73
+                },
+                {
+                  "val": "\"Lacerda\"",
+                  "offset": 85
+                },
+                {
+                  "val": "\"10/18/1983\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"Rua Mario Gomes\"",
+                  "offset": 108
+                },
+                {
+                  "val": "\"53654875\"",
+                  "offset": 126
+                },
+                {
+                  "val": "\"São Paulo\"",
+                  "offset": 137
+                },
+                {
+                  "val": "\"www.google.com.br\"",
+                  "offset": 149
+                }
+              ],
+              "location": "AutomobileInsuranceSteps.preencheFormularioAbaInsurantData(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 786214500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Preenche formulário da Aba \u0027Enter Product Data\u0027 de Automobile Insurance \"05/10/2025\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/10/2025\"",
+                  "offset": 72
+                }
+              ],
+              "location": "AutomobileInsuranceSteps.preencheFormularioAbaProductData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 538664500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Preenche formulário da Aba \u0027Select Price Option\u0027 de Automobile Insurance",
+            "match": {
+              "location": "AutomobileInsuranceSteps.preencheFormularioAbaSelectPriceOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1608249900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Preenche formulário da Aba \u0027Send Quote\u0027 de Automobile Insurance \"franciscolacerda@gmail.com\",\"8199875425\",\"Francisco\",\"Avt123456\",\"Avt123456\",\"Testando cadastro de Automobile Insurance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"franciscolacerda@gmail.com\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"8199875425\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"Francisco\"",
+                  "offset": 106
+                },
+                {
+                  "val": "\"Avt123456\"",
+                  "offset": 118
+                },
+                {
+                  "val": "\"Avt123456\"",
+                  "offset": 130
+                },
+                {
+                  "val": "\"Testando cadastro de Automobile Insurance\"",
+                  "offset": 142
+                }
+              ],
+              "location": "AutomobileInsuranceSteps.preencheFormularioAbaSendQuote(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10783572400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Valida a mensagem \u0027Sending e-mail success!\u0027 de Automobile Insurance",
+            "match": {
+              "location": "AutomobileInsuranceSteps.validaMensagemSucessoTela()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -85,13 +252,785 @@
             "name": "@Smoke"
           }
         ]
+      },
+      {
+        "start_timestamp": "2024-07-12T03:11:52.316Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11218400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.setarConfiguracoes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 998601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.coletarDados(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 233300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.logInicial()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Testar a tela Truck Insurance",
+        "description": "",
+        "id": "realizar-testes-de-cadastro-dos-menus-automobile--truck--motorcycle-e-camper-do-site-tricentis;testar-a-tela-truck-insurance;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3604111501,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookAfter.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 298900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookAfter.finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3027641200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Acessa o site do Tricentis",
+            "match": {
+              "location": "AutomobileInsuranceSteps.acessasite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3156540600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Clica no menu Truck",
+            "match": {
+              "location": "TruckInsuranceSteps.clicaMenuTruck()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1643487100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Preenche formulário da Aba \u0027Enter Vehicle Data\u0027 de Truck Insurance \"1000\",\"10/10/1983\",\"1000\",\"50000\",\"100000\",\"EFG5F2\",\"100000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1000\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"10/10/1983\"",
+                  "offset": 74
+                },
+                {
+                  "val": "\"1000\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"50000\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"100000\"",
+                  "offset": 102
+                },
+                {
+                  "val": "\"EFG5F2\"",
+                  "offset": 111
+                },
+                {
+                  "val": "\"100000\"",
+                  "offset": 120
+                }
+              ],
+              "location": "TruckInsuranceSteps.preencheFormularioAbaVehicleData(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1926624600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Preenche formulário da Aba \u0027Enter Insurant Data\u0027 de Truck Insurance \"Leonardo\",\"Mineiro\",\"10/20/1983\",\"Avenida João de Deus\",\"54321167\",\"Rio de Janeiro\",\"www.truckstar.com.br\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Leonardo\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"Mineiro\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"10/20/1983\"",
+                  "offset": 89
+                },
+                {
+                  "val": "\"Avenida João de Deus\"",
+                  "offset": 102
+                },
+                {
+                  "val": "\"54321167\"",
+                  "offset": 125
+                },
+                {
+                  "val": "\"Rio de Janeiro\"",
+                  "offset": 136
+                },
+                {
+                  "val": "\"www.truckstar.com.br\"",
+                  "offset": 153
+                }
+              ],
+              "location": "TruckInsuranceSteps.preencheFormularioAbaInsurantData(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 751658499,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Preenche formulário da Aba \u0027Enter Product Data\u0027 de Truck Insurance \"05/10/2025\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/10/2025\"",
+                  "offset": 67
+                }
+              ],
+              "location": "TruckInsuranceSteps.preencheFormularioAbaProductData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 601560500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Preenche formulário da Aba \u0027Select Price Option\u0027 de Truck Insurance",
+            "match": {
+              "location": "TruckInsuranceSteps.preencheFormularioAbaSelectPriceOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1524044399,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Preenche formulário da Aba \u0027Send Quote\u0027 de Truck Insurance \"leonardomineiro@gmail.com\",\"8199875425\",\"Leonardo\",\"Avt123456\",\"Avt123456\",\"Testando cadastro Truck Insurance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"leonardomineiro@gmail.com\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"8199875425\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"Leonardo\"",
+                  "offset": 100
+                },
+                {
+                  "val": "\"Avt123456\"",
+                  "offset": 111
+                },
+                {
+                  "val": "\"Avt123456\"",
+                  "offset": 123
+                },
+                {
+                  "val": "\"Testando cadastro Truck Insurance\"",
+                  "offset": 135
+                }
+              ],
+              "location": "TruckInsuranceSteps.preencheFormularioAbaSendQuote(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10865768000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Valida a mensagem \u0027Sending e-mail success!\u0027 de Truck Insurance",
+            "match": {
+              "location": "TruckInsuranceSteps.validaMensagemSucessoTela()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TESTE"
+          },
+          {
+            "name": "@Regressivo"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-12T03:12:19.438Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6212501,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.setarConfiguracoes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2370300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.coletarDados(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 219400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.logInicial()"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "Testar a tela Motorcycle Insurance",
+        "description": "",
+        "id": "realizar-testes-de-cadastro-dos-menus-automobile--truck--motorcycle-e-camper-do-site-tricentis;testar-a-tela-motorcycle-insurance;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3588769000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookAfter.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 186799,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookAfter.finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3029288900,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Acessa o site do Tricentis",
+            "match": {
+              "location": "AutomobileInsuranceSteps.acessasite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3156015799,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Clica no menu Motorcycle",
+            "match": {
+              "location": "MotorcycleInsuranceSteps.clicaMenuMotorcycle()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1388773400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Preenche formulário da Aba \u0027Enter Vehicle Data\u0027 de Motorcycle Insurance \"2000\",\"2000\",\"10/25/1999\",\"100000\",\"100000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2000\"",
+                  "offset": 72
+                },
+                {
+                  "val": "\"2000\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"10/25/1999\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"100000\"",
+                  "offset": 99
+                },
+                {
+                  "val": "\"100000\"",
+                  "offset": 108
+                }
+              ],
+              "location": "MotorcycleInsuranceSteps.preencheFormularioAbaVehicleData(String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1875534600,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Preenche formulário da Aba \u0027Enter Insurant Data\u0027 de Motorcycle Insurance \"Marina\",\"Marinho\",\"10/20/1998\",\"Rua Angelo Rodrigues\",\"53846459\",\"Belo Horizonte\",\"www.uol.com.br\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Marina\"",
+                  "offset": 73
+                },
+                {
+                  "val": "\"Marinho\"",
+                  "offset": 82
+                },
+                {
+                  "val": "\"10/20/1998\"",
+                  "offset": 92
+                },
+                {
+                  "val": "\"Rua Angelo Rodrigues\"",
+                  "offset": 105
+                },
+                {
+                  "val": "\"53846459\"",
+                  "offset": 128
+                },
+                {
+                  "val": "\"Belo Horizonte\"",
+                  "offset": 139
+                },
+                {
+                  "val": "\"www.uol.com.br\"",
+                  "offset": 156
+                }
+              ],
+              "location": "MotorcycleInsuranceSteps.preencheFormularioAbaInsurantData(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 678550900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Preenche formulário da Aba \u0027Enter Product Data\u0027 de Motorcycle Insurance \"05/30/2025\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/30/2025\"",
+                  "offset": 72
+                }
+              ],
+              "location": "MotorcycleInsuranceSteps.preencheFormularioAbaProductData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 560183101,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Preenche formulário da Aba \u0027Select Price Option\u0027 de Motorcycle Insurance",
+            "match": {
+              "location": "MotorcycleInsuranceSteps.preencheFormularioAbaSelectPriceOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1543368000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Preenche formulário da Aba \u0027Send Quote\u0027 de Motorcycle Insurance \"marinamarinho@gmail.com\",\"8199875425\",\"Marina\",\"Avt123456\",\"Avt123456\",\"Testando cadastro Motorcycle Insurance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"marinamarinho@gmail.com\"",
+                  "offset": 64
+                },
+                {
+                  "val": "\"8199875425\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"Marina\"",
+                  "offset": 103
+                },
+                {
+                  "val": "\"Avt123456\"",
+                  "offset": 112
+                },
+                {
+                  "val": "\"Avt123456\"",
+                  "offset": 124
+                },
+                {
+                  "val": "\"Testando cadastro Motorcycle Insurance\"",
+                  "offset": 136
+                }
+              ],
+              "location": "MotorcycleInsuranceSteps.preencheFormularioAbaSendQuote(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10593103100,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Valida a mensagem \u0027Sending e-mail success!\u0027 de Motorcycle Insurance",
+            "match": {
+              "location": "MotorcycleInsuranceSteps.validaMensagemSucessoTela()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TESTE"
+          },
+          {
+            "name": "@Regressivo"
+          },
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-12T03:12:45.865Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3293500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.setarConfiguracoes()"
+            }
+          },
+          {
+            "result": {
+              "duration": 813300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.coletarDados(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 260400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookBefore.logInicial()"
+            }
+          }
+        ],
+        "line": 63,
+        "name": "Testar a tela Camper Insurance",
+        "description": "",
+        "id": "realizar-testes-de-cadastro-dos-menus-automobile--truck--motorcycle-e-camper-do-site-tricentis;testar-a-tela-camper-insurance;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 3603968601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookAfter.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 175601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookAfter.finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3016189099,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Acessa o site do Tricentis",
+            "match": {
+              "location": "AutomobileInsuranceSteps.acessasite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3153398801,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Clica no menu Camper",
+            "match": {
+              "location": "CamperInsuranceSteps.clicaMenuCamper()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1672852200,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Preenche formulário da Aba \u0027Enter Vehicle Data\u0027 de Camper Insurance \"2000\",\"10/10/1995\",\"1000\",\"50000\",\"100000\",\"ABC1EF2\",\"100000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2000\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"10/10/1995\"",
+                  "offset": 75
+                },
+                {
+                  "val": "\"1000\"",
+                  "offset": 88
+                },
+                {
+                  "val": "\"50000\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"100000\"",
+                  "offset": 103
+                },
+                {
+                  "val": "\"ABC1EF2\"",
+                  "offset": 112
+                },
+                {
+                  "val": "\"100000\"",
+                  "offset": 122
+                }
+              ],
+              "location": "CamperInsuranceSteps.preencheFormularioAbaVehicleData(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1958392401,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Preenche formulário da Aba \u0027Enter Insurant Data\u0027 de Camper Insurance \"Jonatas\",\"Ferreira\",\"10/20/1983\",\"Rua Mario Melo\",\"34564897\",\"Santos\",\"www.jurandy.com.br\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jonatas\"",
+                  "offset": 69
+                },
+                {
+                  "val": "\"Ferreira\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"10/20/1983\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"Rua Mario Melo\"",
+                  "offset": 103
+                },
+                {
+                  "val": "\"34564897\"",
+                  "offset": 120
+                },
+                {
+                  "val": "\"Santos\"",
+                  "offset": 131
+                },
+                {
+                  "val": "\"www.jurandy.com.br\"",
+                  "offset": 140
+                }
+              ],
+              "location": "CamperInsuranceSteps.preencheFormularioAbaInsurantData(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 595315200,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Preenche formulário da Aba \u0027Enter Product Data\u0027 de Camper Insurance \"05/10/2025\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05/10/2025\"",
+                  "offset": 68
+                }
+              ],
+              "location": "CamperInsuranceSteps.preencheFormularioAbaProductData(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 567964999,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Preenche formulário da Aba \u0027Select Price Option\u0027 de Camper Insurance",
+            "match": {
+              "location": "CamperInsuranceSteps.preencheFormularioAbaSelectPriceOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1610685899,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "Preenche formulário da Aba \u0027Send Quote\u0027 de Camper Insurance \"jonatasferreira@gmail.com\",\"8199875425\",\"Jonatas\",\"Avt123456\",\"Avt123456\",\"Testando cadastro Camper Insurance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jonatasferreira@gmail.com\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"8199875425\"",
+                  "offset": 88
+                },
+                {
+                  "val": "\"Jonatas\"",
+                  "offset": 101
+                },
+                {
+                  "val": "\"Avt123456\"",
+                  "offset": 111
+                },
+                {
+                  "val": "\"Avt123456\"",
+                  "offset": 123
+                },
+                {
+                  "val": "\"Testando cadastro Camper Insurance\"",
+                  "offset": 135
+                }
+              ],
+              "location": "CamperInsuranceSteps.preencheFormularioAbaSendQuote(String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10624047399,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "Valida a mensagem \u0027Sending e-mail success!\u0027 de Camper Insurance",
+            "match": {
+              "location": "CamperInsuranceSteps.validaMensagemSucessoTela()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TESTE"
+          },
+          {
+            "name": "@Regressivo"
+          },
+          {
+            "name": "@Smoke"
+          },
+          {
+            "name": "@Test"
+          }
+        ]
       }
     ],
-    "name": "Tela do site Tricentis",
-    "description": "  Dado que eu queira acessar o sistema do Tricentis para testar a funcionalidade da tela.",
-    "id": "tela-do-site-tricentis",
+    "name": "Realizar testes de cadastro dos menus Automobile, Truck, Motorcycle e Camper do site Tricentis",
+    "description": "  Dado que eu queira preencher os formulários das  abas no sistema do Tricentis.",
+    "id": "realizar-testes-de-cadastro-dos-menus-automobile--truck--motorcycle-e-camper-do-site-tricentis",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/BACKOFFICE/HOME/HOME_BACKOFFICE.feature",
+    "uri": "file:src/test/resources/features/TRICENTIS/TricentisInsurance.feature",
     "tags": [
       {
         "name": "@TESTE",

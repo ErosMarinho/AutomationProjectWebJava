@@ -970,7 +970,7 @@ public class Interactions implements INavegador {
 	
 	public void screenshotEvidence(String description) {
 		log.info(String.format("Método: fullPageScreenshot() - Tirando Screenshot do arquivo %s", description));
-		String path = "src//test//resources//screenshots//";
+		String path = "src/test/resources/screenshots/sucesso";
 		String nome = Utilitarios.formatter();
 		
 		try {
@@ -1004,5 +1004,6 @@ public class Interactions implements INavegador {
 	        log.info(String.format("Método: clipboardText() - Retornando string copiada: %s", result));
 	        return result;
 	}
+	
 			
 }
