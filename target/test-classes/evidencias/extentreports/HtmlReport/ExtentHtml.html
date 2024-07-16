@@ -49,7 +49,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -59,7 +58,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>jul 5, 2024 11:46:13 PM</span>
+			<span class='label blue darken-3 suite-start-time'>jul 12, 2024 12:11:21 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -75,7 +74,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -90,6 +88,7 @@
 					<li><a href='#'>@TESTE</a></li>
 					<li><a href='#'>@Regressivo</a></li>
 					<li><a href='#'>@Smoke</a></li>
+					<li><a href='#'>@Test</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -130,10 +129,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -144,10 +143,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -160,10 +159,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>32</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -183,11 +182,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Tela do site Tricentis</span>
-						<span class='test-time'>jul 5, 2024 11:46:17 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>Realizar testes de cadastro dos menus Automobile, Truck, Motorcycle e Camper do site Tricentis</span>
+						<span class='test-time'>jul 12, 2024 12:11:24 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -196,99 +195,203 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='test-desc'>Dado que eu queira acessar o sistema do Tricentis para testar a funcionalidade da tela.</div>
-<div class='scenario outline node' test-id='2' status='fail'>
+<div class='test-desc'>Dado que eu queira preencher os formulários das  abas no sistema do Tricentis.</div>
+<div class='scenario outline node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label'>@Regressivo</span>
 		<span class='category label'>@Smoke</span>
 	</div>
-	<span class='duration right label'>0h 0m 1s+270ms</span>
+	<span class='duration right label'>0h 0m 23s+391ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Testar funcionalidade dos componentes na tela</div>
-		<table class='runtime-table table-striped table'><tr><td>Email</td><td>Senha</td></tr><tr><td>"planner@planner.com.br"</td><td>"Planner"</td></tr></table>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Testar a tela Automobile Insurance</div>
+		<table class='runtime-table table-striped table'><tr><td>enginePerformance</td><td>dataManufacture</td><td>listPrice</td><td>licensePlateNumber</td><td>annualMileage</td><td>firstName</td><td>lastName</td><td>dateBirth</td><td>streetAddress</td><td>zipCode</td><td>city</td><td>website</td><td>startDate</td><td>email</td><td>phone</td><td>userName</td><td>password</td><td>confirmPassword</td><td>comments</td></tr><tr><td>"2000"</td><td>"10/10/1983"</td><td>"100000"</td><td>"ABC1EF2"</td><td>"100000"</td><td>"Francisco"</td><td>"Lacerda"</td><td>"10/18/1983"</td><td>"Rua Mario Gomes"</td><td>"53654875"</td><td>"São Paulo"</td><td>"www.google.com.br"</td><td>"05/10/2025"</td><td>"franciscolacerda@gmail.com"</td><td>"8199875425"</td><td>"Francisco"</td><td>"Avt123456"</td><td>"Avt123456"</td><td>"Testando cadastro de Automobile Insurance"</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Testar funcionalidade dos componentes na tela</div>
+		<li test-id='3' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Testar a tela Automobile Insurance</div>
 			<ul class='gc steps'>
 				<li test-id='7' class='gc given pass' status='pass'>
-					<h6 class="step-name" title="HomeBackofficeSteps.acessasite()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Acessa o site do Tricentis</h6>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.acessasite()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Acessa o site do Tricentis</h6>
 					<div class="node-step"></div>
 				</li>
-				<li test-id='8' class='gc * fail' status='fail'>
-					<h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>HookAfter.screenshot(Scenario)</h6>
-					<textarea disabled class="code-block">java.lang.RuntimeException: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'scrollHeight')
-  (Session info: chrome=126.0.6478.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EROS-WIND11', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_412-412'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Eros\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ae9a864524ba0d93d159dfc36d5fea7d
-	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:32)
-	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getFullHeight(ViewportPastingDecorator.java:67)
-	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:41)
-	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:35)
-	at ru.yandex.qatools.ashot.AShot.takeScreenshot(AShot.java:145)
-	at br.com.project.awj.core.interacao.Interactions.screenshotEvidence(Interactions.java:980)
-	at br.com.project.awj.execute.hooks.HookAfter.screenshot(HookAfter.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
-	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.TestCase.run(TestCase.java:50)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'scrollHeight')
-  (Session info: chrome=126.0.6478.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EROS-WIND11', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_412-412'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Eros\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ae9a864524ba0d93d159dfc36d5fea7d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
-	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:30)
-	... 43 more
-</textarea>
+				<li test-id='8' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.clicaMenuAutomobile()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Clica no menu Automobile</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='9' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.preencheFormularioAbaVehicleData(String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Vehicle Data' de Automobile Insurance "2000","10/10/1983","100000","ABC1EF2","100000"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='10' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.preencheFormularioAbaInsurantData(String,String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Insurant Data' de Automobile Insurance "Francisco","Lacerda","10/18/1983","Rua Mario Gomes","53654875","São Paulo","www.google.com.br"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='11' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.preencheFormularioAbaProductData(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Product Data' de Automobile Insurance "05/10/2025"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='12' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.preencheFormularioAbaSelectPriceOption()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Select Price Option' de Automobile Insurance</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='13' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.preencheFormularioAbaSendQuote(String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Send Quote' de Automobile Insurance "franciscolacerda@gmail.com","8199875425","Francisco","Avt123456","Avt123456","Testando cadastro de Automobile Insurance"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='14' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.validaMensagemSucessoTela()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Valida a mensagem 'Sending e-mail success!' de Automobile Insurance</h6>
+					<div class="node-step"></div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='17' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>@Regressivo</span>
+		<span class='category label'>@Smoke</span>
+	</div>
+	<span class='duration right label'>0h 0m 23s+499ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Testar a tela Truck Insurance</div>
+		<table class='runtime-table table-striped table'><tr><td>enginePerformance</td><td>dataManufacture</td><td>payload</td><td>totalWeight</td><td>listPrice</td><td>licensePlateNumber</td><td>annualMileage</td><td>firstName</td><td>lastName</td><td>dateBirth</td><td>streetAddress</td><td>zipCode</td><td>city</td><td>website</td><td>startDate</td><td>email</td><td>phone</td><td>userName</td><td>password</td><td>confirmPassword</td><td>comments</td></tr><tr><td>"1000"</td><td>"10/10/1983"</td><td>"1000"</td><td>"50000"</td><td>"100000"</td><td>"EFG5F2"</td><td>"100000"</td><td>"Leonardo"</td><td>"Mineiro"</td><td>"10/20/1983"</td><td>"Avenida João de Deus"</td><td>"54321167"</td><td>"Rio de Janeiro"</td><td>"www.truckstar.com.br"</td><td>"05/10/2025"</td><td>"leonardomineiro@gmail.com"</td><td>"8199875425"</td><td>"Leonardo"</td><td>"Avt123456"</td><td>"Avt123456"</td><td>"Testando cadastro Truck Insurance"</td></tr></table>
+	</div>
+	<ul class='steps'>
+		<li test-id='18' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Testar a tela Truck Insurance</div>
+			<ul class='gc steps'>
+				<li test-id='22' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.acessasite()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Acessa o site do Tricentis</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='23' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="TruckInsuranceSteps.clicaMenuTruck()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Clica no menu Truck</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='24' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="TruckInsuranceSteps.preencheFormularioAbaVehicleData(String,String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Vehicle Data' de Truck Insurance "1000","10/10/1983","1000","50000","100000","EFG5F2","100000"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='25' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="TruckInsuranceSteps.preencheFormularioAbaInsurantData(String,String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Insurant Data' de Truck Insurance "Leonardo","Mineiro","10/20/1983","Avenida João de Deus","54321167","Rio de Janeiro","www.truckstar.com.br"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='26' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="TruckInsuranceSteps.preencheFormularioAbaProductData(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Product Data' de Truck Insurance "05/10/2025"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='27' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="TruckInsuranceSteps.preencheFormularioAbaSelectPriceOption()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Select Price Option' de Truck Insurance</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='28' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="TruckInsuranceSteps.preencheFormularioAbaSendQuote(String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Send Quote' de Truck Insurance "leonardomineiro@gmail.com","8199875425","Leonardo","Avt123456","Avt123456","Testando cadastro Truck Insurance"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='29' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="TruckInsuranceSteps.validaMensagemSucessoTela()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Valida a mensagem 'Sending e-mail success!' de Truck Insurance</h6>
+					<div class="node-step"></div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='32' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>@Regressivo</span>
+		<span class='category label'>@Smoke</span>
+	</div>
+	<span class='duration right label'>0h 0m 22s+826ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Testar a tela Motorcycle Insurance</div>
+		<table class='runtime-table table-striped table'><tr><td>cylinderCapacity</td><td>enginePerformance</td><td>dataManufacture</td><td>listPrice</td><td>annualMileage</td><td>firstName</td><td>lastName</td><td>dateBirth</td><td>streetAddress</td><td>zipCode</td><td>city</td><td>website</td><td>startDate</td><td>email</td><td>phone</td><td>userName</td><td>password</td><td>confirmPassword</td><td>comments</td></tr><tr><td>"2000"</td><td>"2000"</td><td>"10/25/1999"</td><td>"100000"</td><td>"100000"</td><td>"Marina"</td><td>"Marinho"</td><td>"10/20/1998"</td><td>"Rua Angelo Rodrigues"</td><td>"53846459"</td><td>"Belo Horizonte"</td><td>"www.uol.com.br"</td><td>"05/30/2025"</td><td>"marinamarinho@gmail.com"</td><td>"8199875425"</td><td>"Marina"</td><td>"Avt123456"</td><td>"Avt123456"</td><td>"Testando cadastro Motorcycle Insurance"</td></tr></table>
+	</div>
+	<ul class='steps'>
+		<li test-id='33' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Testar a tela Motorcycle Insurance</div>
+			<ul class='gc steps'>
+				<li test-id='37' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.acessasite()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Acessa o site do Tricentis</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='38' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="MotorcycleInsuranceSteps.clicaMenuMotorcycle()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Clica no menu Motorcycle</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='39' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="MotorcycleInsuranceSteps.preencheFormularioAbaVehicleData(String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Vehicle Data' de Motorcycle Insurance "2000","2000","10/25/1999","100000","100000"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='40' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="MotorcycleInsuranceSteps.preencheFormularioAbaInsurantData(String,String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Insurant Data' de Motorcycle Insurance "Marina","Marinho","10/20/1998","Rua Angelo Rodrigues","53846459","Belo Horizonte","www.uol.com.br"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='41' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="MotorcycleInsuranceSteps.preencheFormularioAbaProductData(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Product Data' de Motorcycle Insurance "05/30/2025"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='42' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="MotorcycleInsuranceSteps.preencheFormularioAbaSelectPriceOption()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Select Price Option' de Motorcycle Insurance</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='43' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="MotorcycleInsuranceSteps.preencheFormularioAbaSendQuote(String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Send Quote' de Motorcycle Insurance "marinamarinho@gmail.com","8199875425","Marina","Avt123456","Avt123456","Testando cadastro Motorcycle Insurance"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='44' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="MotorcycleInsuranceSteps.validaMensagemSucessoTela()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Valida a mensagem 'Sending e-mail success!' de Motorcycle Insurance</h6>
+					<div class="node-step"></div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='47' status='pass'>
+	<div class='category-list'>
+		<span class='category label'>@Regressivo</span>
+		<span class='category label'>@Smoke</span>
+		<span class='category label'>@Test</span>
+	</div>
+	<span class='duration right label'>0h 0m 23s+202ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Testar a tela Camper Insurance</div>
+		<table class='runtime-table table-striped table'><tr><td>enginePerformance</td><td>dataManufacture</td><td>payload</td><td>totalWeight</td><td>listPrice</td><td>licensePlateNumber</td><td>annualMileage</td><td>firstName</td><td>lastName</td><td>dateBirth</td><td>streetAddress</td><td>zipCode</td><td>city</td><td>website</td><td>startDate</td><td>email</td><td>phone</td><td>userName</td><td>password</td><td>confirmPassword</td><td>comments</td></tr><tr><td>"2000"</td><td>"10/10/1995"</td><td>"1000"</td><td>"50000"</td><td>"100000"</td><td>"ABC1EF2"</td><td>"100000"</td><td>"Jonatas"</td><td>"Ferreira"</td><td>"10/20/1983"</td><td>"Rua Mario Melo"</td><td>"34564897"</td><td>"Santos"</td><td>"www.jurandy.com.br"</td><td>"05/10/2025"</td><td>"jonatasferreira@gmail.com"</td><td>"8199875425"</td><td>"Jonatas"</td><td>"Avt123456"</td><td>"Avt123456"</td><td>"Testando cadastro Camper Insurance"</td></tr></table>
+	</div>
+	<ul class='steps'>
+		<li test-id='48' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Testar a tela Camper Insurance</div>
+			<ul class='gc steps'>
+				<li test-id='52' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="AutomobileInsuranceSteps.acessasite()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Acessa o site do Tricentis</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='53' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="CamperInsuranceSteps.clicaMenuCamper()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Clica no menu Camper</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='54' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="CamperInsuranceSteps.preencheFormularioAbaVehicleData(String,String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Vehicle Data' de Camper Insurance "2000","10/10/1995","1000","50000","100000","ABC1EF2","100000"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='55' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="CamperInsuranceSteps.preencheFormularioAbaInsurantData(String,String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Insurant Data' de Camper Insurance "Jonatas","Ferreira","10/20/1983","Rua Mario Melo","34564897","Santos","www.jurandy.com.br"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='56' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="CamperInsuranceSteps.preencheFormularioAbaProductData(String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Enter Product Data' de Camper Insurance "05/10/2025"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='57' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="CamperInsuranceSteps.preencheFormularioAbaSelectPriceOption()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Select Price Option' de Camper Insurance</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='58' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="CamperInsuranceSteps.preencheFormularioAbaSendQuote(String,String,String,String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Preenche formulário da Aba 'Send Quote' de Camper Insurance "jonatasferreira@gmail.com","8199875425","Jonatas","Avt123456","Avt123456","Testando cadastro Camper Insurance"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='59' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="CamperInsuranceSteps.validaMensagemSucessoTela()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Valida a mensagem 'Sending e-mail success!' de Camper Insurance</h6>
+					<div class="node-step"></div>
 				</li>
 			</ul>
 		</li>
@@ -338,13 +441,13 @@ Session ID: ae9a864524ba0d93d159dfc36d5fea7d
 					<div class='category-heading'>
 						<span class='category-name'>@TESTE</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -358,14 +461,29 @@ Session ID: ae9a864524ba0d93d159dfc36d5fea7d
 								</thead>
 								<tbody>
 									<tr>
-										<td>jul 5, 2024 11:46:17 PM</td>
-										<td class='linked' test-id='1'>Tela do site Tricentis</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>jul 12, 2024 12:11:24 AM</td>
+										<td class='linked' test-id='1'>Realizar testes de cadastro dos menus Automobile, Truck, Motorcycle e Camper do site Tricentis</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>jul 5, 2024 11:46:17 PM</td>
-										<td class='linked' test-id='3'>Testar funcionalidade dos componentes na tela</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>jul 12, 2024 12:11:24 AM</td>
+										<td class='linked' test-id='3'>Testar a tela Automobile Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:11:52 AM</td>
+										<td class='linked' test-id='18'>Testar a tela Truck Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:19 AM</td>
+										<td class='linked' test-id='33'>Testar a tela Motorcycle Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:45 AM</td>
+										<td class='linked' test-id='48'>Testar a tela Camper Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -376,13 +494,13 @@ Session ID: ae9a864524ba0d93d159dfc36d5fea7d
 					<div class='category-heading'>
 						<span class='category-name'>@Regressivo</span>
 						<span class='category-status right'>
-						<span class='label fail'>2</span>
+						<span class='label pass'>8</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 8</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -396,14 +514,44 @@ Session ID: ae9a864524ba0d93d159dfc36d5fea7d
 								</thead>
 								<tbody>
 									<tr>
-										<td>jul 5, 2024 11:46:17 PM</td>
-										<td class='linked' test-id='2'>Testar funcionalidade dos componentes na tela</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>jul 12, 2024 12:11:24 AM</td>
+										<td class='linked' test-id='2'>Testar a tela Automobile Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>jul 5, 2024 11:46:17 PM</td>
-										<td class='linked' test-id='3'>Testar funcionalidade dos componentes na tela</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>jul 12, 2024 12:11:24 AM</td>
+										<td class='linked' test-id='3'>Testar a tela Automobile Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:11:52 AM</td>
+										<td class='linked' test-id='17'>Testar a tela Truck Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:11:52 AM</td>
+										<td class='linked' test-id='18'>Testar a tela Truck Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:19 AM</td>
+										<td class='linked' test-id='32'>Testar a tela Motorcycle Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:19 AM</td>
+										<td class='linked' test-id='33'>Testar a tela Motorcycle Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:45 AM</td>
+										<td class='linked' test-id='47'>Testar a tela Camper Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:45 AM</td>
+										<td class='linked' test-id='48'>Testar a tela Camper Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -414,13 +562,13 @@ Session ID: ae9a864524ba0d93d159dfc36d5fea7d
 					<div class='category-heading'>
 						<span class='category-name'>@Smoke</span>
 						<span class='category-status right'>
-						<span class='label fail'>2</span>
+						<span class='label pass'>8</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 8</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -434,14 +582,82 @@ Session ID: ae9a864524ba0d93d159dfc36d5fea7d
 								</thead>
 								<tbody>
 									<tr>
-										<td>jul 5, 2024 11:46:17 PM</td>
-										<td class='linked' test-id='2'>Testar funcionalidade dos componentes na tela</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>jul 12, 2024 12:11:24 AM</td>
+										<td class='linked' test-id='2'>Testar a tela Automobile Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>jul 5, 2024 11:46:17 PM</td>
-										<td class='linked' test-id='3'>Testar funcionalidade dos componentes na tela</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>jul 12, 2024 12:11:24 AM</td>
+										<td class='linked' test-id='3'>Testar a tela Automobile Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:11:52 AM</td>
+										<td class='linked' test-id='17'>Testar a tela Truck Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:11:52 AM</td>
+										<td class='linked' test-id='18'>Testar a tela Truck Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:19 AM</td>
+										<td class='linked' test-id='32'>Testar a tela Motorcycle Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:19 AM</td>
+										<td class='linked' test-id='33'>Testar a tela Motorcycle Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:45 AM</td>
+										<td class='linked' test-id='47'>Testar a tela Camper Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:45 AM</td>
+										<td class='linked' test-id='48'>Testar a tela Camper Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Test</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>jul 12, 2024 12:12:45 AM</td>
+										<td class='linked' test-id='47'>Testar a tela Camper Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>jul 12, 2024 12:12:45 AM</td>
+										<td class='linked' test-id='48'>Testar a tela Camper Insurance</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -457,133 +673,7 @@ Session ID: ae9a864524ba0d93d159dfc36d5fea7d
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.RuntimeException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>jul 5, 2024 11:46:17 PM</td>
-										<td class='linked' test-id='8'>HookAfter.screenshot(Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.RuntimeException: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'scrollHeight')
-  (Session info: chrome=126.0.6478.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EROS-WIND11', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_412-412'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Eros\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ae9a864524ba0d93d159dfc36d5fea7d
-	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:32)
-	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getFullHeight(ViewportPastingDecorator.java:67)
-	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:41)
-	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:35)
-	at ru.yandex.qatools.ashot.AShot.takeScreenshot(AShot.java:145)
-	at br.com.project.awj.core.interacao.Interactions.screenshotEvidence(Interactions.java:980)
-	at br.com.project.awj.execute.hooks.HookAfter.screenshot(HookAfter.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)
-	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.TestCase.run(TestCase.java:50)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'scrollHeight')
-  (Session info: chrome=126.0.6478.127)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EROS-WIND11', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_412-412'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Eros\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50575}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ae9a864524ba0d93d159dfc36d5fea7d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
-	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:30)
-	... 43 more
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -597,31 +687,31 @@ Session ID: ae9a864524ba0d93d159dfc36d5fea7d
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>32</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>jul 5, 2024 11:46:13 PM</div>
+					<div class='panel-lead'>jul 12, 2024 12:11:21 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>jul 5, 2024 11:46:18 PM</div>
+			 		<div class='panel-lead'>jul 12, 2024 12:13:12 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 4s+874ms</div>
+					<div class='panel-lead'>0h 1m 51s+294ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -638,29 +728,38 @@ Session ID: ae9a864524ba0d93d159dfc36d5fea7d
 						</tr>
 						<tr>
 							<td>@TESTE</td>
+							<td>4</td>
 							<td>0</td>
-							<td>1</td>
 							<td>0</td>
 							<td>
-									0%
+									80%
 							</td>
 						</tr>
 						<tr>
 							<td>@Regressivo</td>
+							<td>8</td>
 							<td>0</td>
-							<td>2</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@Smoke</td>
+							<td>8</td>
 							<td>0</td>
-							<td>2</td>
 							<td>0</td>
 							<td>
-									0%
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Test</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 					</table>
@@ -675,38 +774,38 @@ Session ID: ae9a864524ba0d93d159dfc36d5fea7d
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
-				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				exceptionsParent: 0,
+				childCount: 4,
+				passChild: 4,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
-				grandChildCount: 2,
-				passGrandChild: 1,
-				failGrandChild: 1,
+				exceptionsChild: 0,
+				grandChildCount: 32,
+				passGrandChild: 32,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Tela do site Tricentis":1.27
+			        "Realizar testes de cadastro dos menus Automobile, Truck, Motorcycle e Camper do site Tricentis":104.197
 			};
 		</script>
 	
